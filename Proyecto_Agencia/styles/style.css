@@ -1,0 +1,485 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700&family=Public+Sans:wght@400;500;600&display=swap');
+
+:root {
+    --color-primario: #F3F5F4;
+    --color-secundario: hsl(216, 79%, 19%);
+    --color-secundario-oscuro: hsl(216, 79%, 13%);
+    --color-acento: hsl(32, 99%, 49%);
+    --color-fondo-2: hsl(150, 9%, 96%);
+    --color-texto: #444444;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Public Sans', sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: var(--color-texto);
+    line-height: 1.5;
+}
+
+h1, h2, h3 {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: 700;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+/* BOTONES Y ENLACES */
+.a_destacado {
+    display: inline-block;
+    background-color: var(--color-acento);
+    padding: 1rem 2rem;
+    border-radius: 10px;
+}
+
+.a_activo {
+    background-color: var(--color-secundario);
+    color: var(--color-primario);
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+}
+
+.a_secundario {
+    display: inline-block;
+    border: 2px solid var(--color-secundario);
+    color: var(--color-secundario);
+    padding: 1rem 2rem;
+    border-radius: 10px;
+}
+
+/* TEXTOS COMUNES */
+.etiqueta {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--color-secundario);
+    margin-bottom: 1rem;
+}
+
+.texto {
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+/* HEADER */
+.header_up {
+    background-color: var(--color-secundario);
+    color: var(--color-primario);
+    padding: 1rem 0;
+}
+
+.header_info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_down {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_down img {
+    height: 3rem;
+    width: auto;
+}
+
+.header_down nav ul {
+    display: flex;
+    gap: 2rem;
+    font-weight: 500;
+}
+
+/* BANNER */
+.banner_bg {
+    background-color: var(--color-fondo-2);
+    padding: 5rem 0;
+}
+
+#banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner_texto {
+    max-width: 520px;
+}
+
+.banner_etiqueta {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--color-acento);
+    margin-bottom: 1rem;
+}
+
+.banner_texto h1 {
+    font-size: 3rem;
+    line-height: 1.1;
+    color: var(--color-secundario);
+    margin-bottom: 1rem;
+}
+
+.banner_descripcion {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    color: var(--color-texto);
+    margin-bottom: 2rem;
+}
+
+#banner img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 24px;
+}
+
+/* PRESENTACION */
+#presentacion {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+#presentacion > div {
+    flex: 1;
+}
+
+#presentacion img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 24px;
+}
+
+#presentacion h2 {
+    font-size: 2.5rem;
+    line-height: 1.15;
+    color: var(--color-secundario);
+    margin-bottom: 1.5rem;
+}
+
+.puntos {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.punto {
+    flex: 1;
+}
+
+.punto svg {
+    fill: var(--color-secundario);
+    margin-bottom: 0.75rem;
+}
+
+.punto strong {
+    color: var(--color-secundario);
+}
+
+/* MISION Y VISION */
+.mision_bg {
+    background-color: var(--color-secundario);
+    padding: 5rem 0;
+}
+
+#mision_vision {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+#mision_vision h2 {
+    font-size: 2.5rem;
+    line-height: 1.15;
+    color: #ffffff;
+    max-width: 600px;
+}
+
+.mision_cajas {
+    display: flex;
+    gap: 1.5rem;
+}
+
+#mision_vision article {
+    flex: 1;
+    background-color: var(--color-secundario-oscuro);
+    border-radius: 20px;
+    padding: 2.5rem;
+}
+
+.numero {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-acento);
+    margin-bottom: 1rem;
+}
+
+#mision_vision h3 {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+#mision_vision article p:last-child {
+    color: var(--color-primario);
+    line-height: 1.5;
+}
+
+/* UBICACION Y HORARIO */
+#ubicacion {
+    display: flex;
+    align-items: stretch;
+    gap: 4rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+#ubicacion > div {
+    flex: 1;
+}
+
+#ubicacion h2 {
+    font-size: 2.5rem;
+    line-height: 1.15;
+    color: var(--color-secundario);
+    margin-bottom: 2rem;
+}
+
+.datos {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.dato {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.dato svg {
+    flex-shrink: 0;
+    fill: var(--color-secundario);
+}
+
+.dato strong {
+    color: var(--color-secundario);
+}
+
+#ubicacion img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 400px;
+    object-fit: cover;
+    border-radius: 24px;
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--color-secundario);
+    color: var(--color-primario);
+    padding-top: 4rem;
+}
+
+footer a {
+    color: var(--color-primario);
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer svg {
+    fill: var(--color-primario);
+}
+
+.footer_main {
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+    padding-bottom: 3rem;
+}
+
+.footer_marca {
+    max-width: 320px;
+}
+
+.footer_marca img {
+    height: 3rem;
+    width: auto;
+    margin-bottom: 1rem;
+}
+
+.footer_marca p {
+    margin-bottom: 1.5rem;
+}
+
+.redes {
+    display: flex;
+    gap: 1rem;
+}
+
+#informacion {
+    display: flex;
+    gap: 4rem;
+}
+
+#informacion strong {
+    font-size: 1.125rem;
+    color: #ffffff;
+}
+
+#informacion p,
+#informacion li {
+    margin-bottom: 0.5rem;
+}
+
+#copyright {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid hsl(216, 40%, 35%);
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    font-size: 0.875rem;
+}
+
+#copyright ul {
+    display: flex;
+    gap: 1.5rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 1rem;
+    }
+
+    /* Header */
+    .header_info {
+        font-size: 0.875rem;
+    }
+
+    .header_down {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .header_down nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+
+    .header_down nav a {
+        display: inline-block;
+        padding: 0.75rem 1rem;
+    }
+
+    /* Banner */
+    .banner_bg {
+        padding: 3rem 0;
+    }
+
+    #banner {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 2rem;
+    }
+
+    .banner_texto {
+        max-width: none;
+    }
+
+    .banner_texto h1 {
+        font-size: 2.25rem;
+    }
+
+    /* Quienes somos */
+    #presentacion {
+        flex-direction: column;
+        gap: 2rem;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    #presentacion h2,
+    #mision_vision h2,
+    #ubicacion h2 {
+        font-size: 2rem;
+    }
+
+    .puntos {
+        flex-direction: column;
+    }
+
+    /* Mision y vision */
+    .mision_bg {
+        padding: 3rem 0;
+    }
+
+    .mision_cajas {
+        flex-direction: column;
+    }
+
+    #mision_vision article {
+        padding: 1.5rem;
+    }
+
+    /* Ubicacion */
+    #ubicacion {
+        flex-direction: column;
+        gap: 2rem;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    #ubicacion img {
+        min-height: 250px;
+    }
+
+    /* Footer */
+    .footer_main {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .footer_marca {
+        max-width: none;
+    }
+
+    #informacion {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    #copyright {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
