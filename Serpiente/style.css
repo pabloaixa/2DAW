@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    color-scheme: light;
+    --bg-color: #f3f4f6;
+    --panel-color: #fff;
+    --controls-color: #e2e3e6;
+    --hover-color: #cdd0d4;
+    --border-color: #e2e3e6;
+    --text-color: #333;
+}
+
+[data-theme="dark"] {
+    color-scheme: dark;
+    --bg-color: #202124;
+    --panel-color: #303134;
+    --controls-color: #424448;
+    --hover-color: #585b61;
+    --border-color: #555;
+    --text-color: #f3f4f6;
+}
+
+body {
+    background-color: var(--bg-color);
+    display: grid;
+    align-items: center;
+    height: 100vh;
+}
+
+.panel-lateral {
+    grid-column: 1;
+    justify-self: end;
+    margin-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.puntuacion {
+    width: 12rem;
+    height: 5.5rem;
+    padding: 1.5rem 1rem;
+    background-color: var(--panel-color);
+    border: 1px solid var(--border-color);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+.puntuacion h2 {
+    margin-bottom: 0.75rem;
+    color: var(--text-color);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.puntuacion p {
+    color: var(--text-color);
+    font-family: 'Courier New', monospace;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+}
+
+.flechas {
+    width: 12rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.fila-flecha {
+    display: flex;
+    justify-content: center;
+    gap: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+
+.flecha {
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--panel-color);
+    border: 1px solid var(--hover-color);
+    color: var(--text-color);
+}
+
+.flecha.activa {
+    background-color: var(--controls-color);
+}
+
+.flecha:active {
+    background-color: var(--controls-color);
+}
+
+#tema {
+    margin-top: 2rem;
+    width: 12rem;
+    padding: 1rem;
+    background-color: var(--controls-color);
+    border: none;
+    color: var(--text-color);
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+#tema:hover {
+    background-color: var(--hover-color);
+}
+
+.icono-flecha {
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: currentColor;
+}
+
+.wrapper {
+    grid-column: 2;
+    width: min(60rem, 100vw);
+    height: auto;
+    background-color: var(--panel-color);
+}
+
+.controles{
+    background-color: var(--controls-color);
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.controles button{
+    background-color: var(--controls-color);
+    border: none;
+    color: var(--text-color);
+    padding: 1rem 2rem;
+    margin: 0;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.controles button:hover{
+    background-color: var(--hover-color);
+}
+
+.juego {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#tabla {
+    width: 100%;
+    height: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+#tabla td {
+    width: auto;
+    height: auto;
+    padding: 0;
+    border: 1px solid var(--border-color);
+    color: transparent;
+}
+
+.serpiente {
+    background-color: rgb(2, 128, 2);
+}
+
+.fruta {
+    background-color: rgb(143, 11, 11);
+}

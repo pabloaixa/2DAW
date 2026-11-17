@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/webp" href="/images/favicon.webp">
+    <link rel="stylesheet" href="style.css">
+    <title>Serpiente</title>
+</head>
+<body>
+    <div class="panel-lateral">
+        <div class="puntuacion">
+            <h2>PUNTOS</h2>
+            <p id="puntos">000</p>
+        </div>
+
+        <div class="flechas">
+            <div class="fila-flecha">
+                <span id="teclaArriba" class="flecha">
+                    <svg class="icono-flecha arriba" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M213.66,165.66a8,8,0,0,1-11.32,0L128,91.31,53.66,165.66a8,8,0,0,1-11.32-11.32l80-80a8,8,0,0,1,11.32,0l80,80A8,8,0,0,1,213.66,165.66Z"></path></svg>
+                </span>
+            </div>
+            <div class="fila-flecha">
+                <span id="teclaIzquierda" class="flecha">
+                    <svg class="icono-flecha izquierda" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M165.66,202.34a8,8,0,0,1-11.32,11.32l-80-80a8,8,0,0,1,0-11.32l80-80a8,8,0,0,1,11.32,11.32L91.31,128Z"></path></svg>
+                </span>
+                <span id="teclaAbajo" class="flecha">
+                    <svg class="icono-flecha abajo" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"></path></svg>
+                </span>
+                <span id="teclaDerecha" class="flecha">
+                    <svg class="icono-flecha derecha" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z"></path></svg>
+                </span>
+            </div>
+        </div>
+
+        <button id="tema">MODO OSCURO</button>
+    </div>
+
+    <div class="wrapper">
+        <div class="controles">
+            <button id="iniciar">INICIAR</button>
+            <button id="pausar">PAUSAR</button>
+            <button id="continuar">CONTINUAR</button>
+            <button id="reiniciar">REINICIAR</button>
+        </div>
+        <div class="juego">
+            <table id="tabla">
+                
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
