@@ -1,0 +1,36 @@
+footer {
+	padding: 40px;
+	background-color: #202020;
+	color: #ffffff;
+}
+
+.contenido {
+	display: flex;
+	justify-content: space-between;
+	gap: 40px;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.columna {
+	flex: 1;
+}
+
+.columna h2 {
+	margin-bottom: 15px;
+	font-size: 1.1rem;
+}
+
+.columna p {
+	margin-bottom: 8px;
+	color: #e4e4e4;
+}
+
+.copyright {
+	max-width: 1200px;
+	margin: 35px auto 0;
+	padding-top: 20px;
+	border-top: 1px solid #555555;
+	text-align: center;
+	color: #e4e4e4;
+}

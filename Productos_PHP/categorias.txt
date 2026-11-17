@@ -1,0 +1,4 @@
+ordenadores
+moviles
+televisores
+tablets

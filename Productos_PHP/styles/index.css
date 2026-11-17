@@ -1,0 +1,44 @@
+main {
+    display: flex;
+}
+
+.presentacion {
+    flex: 1;
+    margin: 2rem 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.presentacion_etiqueta {
+    margin-bottom: 15px;
+    color: #555555;
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.presentacion h1 {
+    margin-bottom: 20px;
+    font-size: clamp(2rem, 4vw, 3.4rem);
+    line-height: 1.1;
+}
+
+.presentacion_descripcion {
+    max-width: 580px;
+    color: #555555;
+    line-height: 1.7;
+}
+
+.presentacion_imagen {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: right;
+}
+
+.presentacion_imagen img {
+    max-width: 84%;
+
+}

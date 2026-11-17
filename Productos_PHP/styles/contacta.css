@@ -1,0 +1,96 @@
+main {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.contacto {
+	width: min(1100px, 100%);
+	margin: 2rem 10rem;
+	display: grid;
+	grid-template-columns: minmax(220px, 0.8fr) minmax(320px, 1.2fr);
+	align-items: center;
+	gap: clamp(3rem, 8vw, 8rem);
+}
+
+.contacto_intro {
+	max-width: 360px;
+}
+
+.contacto_etiqueta {
+	margin-bottom: 15px;
+	color: #555555;
+	font-size: 0.8rem;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+
+.contacto h1 {
+	margin-bottom: 20px;
+	color: #202020;
+	font-size: clamp(2rem, 4vw, 3.2rem);
+	line-height: 1.1;
+}
+
+.contacto_intro > p:last-child {
+	color: #555555;
+	line-height: 1.7;
+}
+
+.formulario_contacto {
+	padding: 2rem;
+}
+
+.campo_formulario {
+	margin-bottom: 1.2rem;
+}
+
+.campo_formulario label {
+	display: block;
+	margin-bottom: 0.5rem;
+	color: #202020;
+	font-weight: bold;
+}
+
+.campo_formulario input,
+.campo_formulario textarea {
+	width: 100%;
+	padding: 0.85rem 1rem;
+	border: 1px solid #cccccc;
+	border-radius: 0;
+	color: #202020;
+	background-color: #f9f9f9;
+	font: inherit;
+}
+
+.campo_formulario textarea {
+	display: block;
+	resize: vertical;
+}
+
+.campo_formulario input:focus,
+.campo_formulario textarea:focus {
+	outline: 2px solid #202020;
+	outline-offset: 1px;
+}
+
+.campo_formulario input::placeholder,
+.campo_formulario textarea::placeholder {
+	color: #777777;
+}
+
+.formulario_contacto button {
+	width: 100%;
+	padding: 0.9rem 1rem;
+	border: 0;
+	border-radius: 100px;
+	color: #ffffff;
+	background-color: #202020;
+	font: inherit;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.formulario_contacto button:hover {
+	background-color: #444444;
+}
